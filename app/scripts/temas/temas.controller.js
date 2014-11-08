@@ -12,7 +12,16 @@ function TemasCtrl($scope, $http, TemasService) {
                 if (typeof res.data === 'object') {
                     $scope.temas = res.data;
                 } else {
-                    console.log('lol');
                 }
             });
+
+    setInterval(function() {
+        $http.get('http://inovarse.lab21k.com.br/temas/')
+                .then(function(res) {
+                    if (typeof res.data === 'object') {
+                        $scope.temas = res.data;
+                    } else {
+                    }
+                });
+    }, 5000);
 }
