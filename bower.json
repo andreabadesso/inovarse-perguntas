@@ -1,0 +1,24 @@
+{
+  "name": "Inovarse-Perguntas",
+  "version": "0.0.1",
+  "authors": [
+    "André Abadesso <andre.abadesso@gmail.com>"
+  ],
+  "description": "Sistema de visualizacao de perguntas do INOVARSE",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.3.2",
+    "angular-material": "~0.5.1",
+    "angular-ui-router": "~0.2.11"
+  }
+}
